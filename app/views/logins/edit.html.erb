@@ -1,0 +1,12 @@
+<h1>Editing login</h1>
+
+<% form_for(@login) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @login %> |
+<%= link_to 'Back', logins_path %>

@@ -1,0 +1,14 @@
+<%= render :partial => @photo%> 
+ <p>
+  <b>Photo List:</b><br>
+ <p>
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Destroy', @photo, :method => :delete, :confirm => "Are you sure?" %> |
+<%= link_to 'See All Posts', photos_path%>
+</p>
+</p>
+  <% fname = @photo.filename %>
+<%= image_tag(fname, { :size => "100", :border => "1"}) %><p/>
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>
